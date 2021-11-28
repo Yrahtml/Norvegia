@@ -108,26 +108,55 @@ nav li a:hover {
 .home-page-footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr auto;
-      grid-template-columns: auto 1fr auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
   padding-left: 20px;
   margin-top: 110px;
 }
 
 .home-page-footer .footer-places {
+  width: 1100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 200px 300px;
-      grid-template-columns: 300px 200px 300px;
-  justify-items: center;
-  margin-right: 60px;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin-right: 100px;
 }
 
 .home-page-footer .arrow {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+}
+
+.desck {
+  height: 55px;
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 90px;
+  display: inline-block;
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 2%;
+}
+
+.desck a {
+  color: white;
+  text-decoration: none;
+}
+
+.desck .desck-text {
+  margin-left: 50px;
+  margin-top: -40px;
+}
+
+.desck .plan-link {
+  margin-left: 50px;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */
